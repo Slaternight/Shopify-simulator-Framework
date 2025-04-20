@@ -65,15 +65,26 @@
     "footer": {
       "type": "footer",
       "settings": {
-        "logo_text": "MyShopify",
+        "logo_image": "s_logo.svg",
+        "logo_alt": "Shuffle Store Logo",
+        "logo_line": "|",
+        "logo_text": "STORE",
+        "copyright_text": "© 2024, Shuffle.store Operated by <br> Studio Plaid. Need help?<br>Email support@shuffle.store",
+        "payment_text": "We accept all major cards, PayPal & crypto",
+        "newsletter_text": "Subscribe and receive drop notifications",
         "links": [
-          { "label": "Home", "url": "/" },
-          { "label": "Cart", "url": "/cart" },
-          { "label": "All Products", "url": "/collections/all" },
-          { "label": "Collections", "url": "/collections" },
-          { "label": "Refund Policy", "url": "/refund-policy" },
-          { "label": "Privacy Policy", "url": "/privacy-policy" },
-          { "label": "Terms of Service", "url": "/terms-of-service" }
+          { "label": "Home"},
+          { "label": "Cart" },
+          { "label": "All Products"},
+          { "label": "Collections"},
+          { "label": "Refund Policy"},
+          { "label": "Privacy Policy" },
+          { "label": "Terms of Service" }
+        ],
+        "socials": [
+          { "label": "Facebook" },
+          { "label": "X (Twitter)" },
+          { "label": "Instagram" }
         ]
       }
     }
