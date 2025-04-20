@@ -7,6 +7,28 @@
         "background_color": "#ffffff"
       }
     },
+    "header": {
+      "type": "header",
+      "settings": {
+      "logo_image": "logov2.svg",
+      "logo_alt": "Shuffle Store",
+      "logo_link": "https://gradiweb.com",
+      "cart": "cart.svg",
+      "cart_alt": "cart",
+      "crypto_span": "We Accept",
+      "crypto__icons": [
+        "bitcoin.svg",
+        "ethereum.svg",
+        "litecoin.svg",
+        "dogecoin.svg",
+        "usdc.svg"
+      ],
+      "nav_links": [
+        { "label": "All Products", "url": "#all-products" },
+        { "label": "Collections", "url": "#collections" }
+      ]
+      }
+    },
     "top-bar": {
       "type": "top-bar",
       "settings": {
