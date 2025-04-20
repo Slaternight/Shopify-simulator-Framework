@@ -1,0 +1,9 @@
+{% assign hero = settings['hero-banner'].settings %}
+
+<section class="hero" style="background-image: url('/assets/{{ hero.background_image }}')">
+  <div class="hero__content">
+    <a href="{{ hero.button_link }}" class="hero__button">
+      {{ hero.button_text }}
+    </a>
+  </div>
+</section>
