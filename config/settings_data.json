@@ -7,6 +7,16 @@
         "background_color": "#ffffff"
       }
     },
+    "top-bar": {
+      "type": "top-bar",
+      "settings": {
+      "announcement_symbol": "little_symbol.svg",
+      "announcement_alt-symbol": "little_symbol",
+      "announcement_text": "FREE SHIPPING FOR ORDERS OVER $100",
+      "background_color": "#6e28d9",
+      "text_color": "#ffffff"
+      }
+    },
     "hero-banner": {
       "type": "hero-banner",
       "settings": {
