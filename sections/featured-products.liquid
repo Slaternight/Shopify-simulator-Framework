@@ -1,8 +1,11 @@
-<section class="featured-products">
-  <h2>{{ settings['featured-products'].settings.heading }}</h2>
-  <div class="product-list">
+{% assign featured = settings['featured-products'].settings %}
+<section class="featured-products section-spacing-product" id="all-products">
+  <div class="featured-products__list featured-products__list--scrollable">
     {% for product in products %}
-      {% render 'product-card', product: product %}
+      <div class="featured-products__item {% if forloop.index > 4 %}featured-products__item--hidden{% endif %}">
+        {% render 'product-card', product: product %}
+      </div>
     {% endfor %}
   </div>
+  <button id="toggleProducts" class="featured-products__toggle-button">{{ featured.button_text }}</button>
 </section>
