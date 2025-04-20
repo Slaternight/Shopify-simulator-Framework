@@ -4,30 +4,96 @@
       "type": "featured-products",
       "settings": {
         "heading": "Our Featured Products",
-        "background_color": "#ffffff"
+        "background_color": "#ffffff",
+        "button_text": "VIEW ALL"
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+      "logo_image": "logov2.svg",
+      "logo_alt": "Shuffle Store",
+      "logo_link": "https://gradiweb.com",
+      "cart": "cart.svg",
+      "cart_alt": "cart",
+      "crypto_span": "We Accept",
+      "crypto__icons": [
+        "bitcoin.svg",
+        "ethereum.svg",
+        "litecoin.svg",
+        "dogecoin.svg",
+        "usdc.svg"
+      ],
+      "nav_links": [
+        { "label": "All Products", "url": "#all-products" },
+        { "label": "Collections", "url": "#collections" }
+      ]
+      }
+    },
+    "top-bar": {
+      "type": "top-bar",
+      "settings": {
+      "announcement_symbol": "little_symbol.svg",
+      "announcement_alt-symbol": "little_symbol",
+      "announcement_text": "FREE SHIPPING FOR ORDERS OVER $100",
+      "background_color": "#6e28d9",
+      "text_color": "#ffffff"
       }
     },
     "hero-banner": {
       "type": "hero-banner",
       "settings": {
-        "button_text": "Shop Now",
-        "button_link": "/collections/all",
-        "marquee_text": "Free Shipping on Orders Over $50",
+        "button_text": "VIEW THE COLLECTION",
+        "button_link": "#collections",
+        "marquee_icon": "symbol.svg",
+        "marquee_text": "SHUFFLE ESSENTIALS",
         "background_image": "hero_banner_img.avif"
+      }
+    },
+    "product-card": {
+      "type": "product-card",
+      "settings": {
+        "logo_image": "logo.svg",
+        "logo_alt": "Shuffle Store",
+        "logo_link": "https://gradiweb.com"
+      }
+    },
+    "latest-collection": {
+      "type": "latest-collection",
+      "settings": {
+        "symbol_right": "symbol_collection.svg",
+        "title": "Latest Collection",
+        "symbol_left": "symbol_collection.svg",
+        "collection_name_1": "KET.CLUB",
+        "collection_name_2": "Shuffle Essentials",
+        "image_1": "ket_club.jpg",
+        "image_2": "shuffle_essentials.webp",
+        "image_3": "homepage_bottom_banner.avif"
       }
     },
     "footer": {
       "type": "footer",
       "settings": {
-        "logo_text": "MyShopify",
+        "logo_image": "s_logo.svg",
+        "logo_alt": "Shuffle Store Logo",
+        "logo_line": "|",
+        "logo_text": "STORE",
+        "copyright_text": "© 2024, Shuffle.store Operated by <br> Studio Plaid. Need help?<br>Email support@shuffle.store",
+        "payment_text": "We accept all major cards, PayPal & crypto",
+        "newsletter_text": "Subscribe and receive drop notifications",
         "links": [
-          { "label": "Home", "url": "/" },
-          { "label": "Cart", "url": "/cart" },
-          { "label": "All Products", "url": "/collections/all" },
-          { "label": "Collections", "url": "/collections" },
-          { "label": "Refund Policy", "url": "/refund-policy" },
-          { "label": "Privacy Policy", "url": "/privacy-policy" },
-          { "label": "Terms of Service", "url": "/terms-of-service" }
+          { "label": "Home"},
+          { "label": "Cart" },
+          { "label": "All Products"},
+          { "label": "Collections"},
+          { "label": "Refund Policy"},
+          { "label": "Privacy Policy" },
+          { "label": "Terms of Service" }
+        ],
+        "socials": [
+          { "label": "Facebook" },
+          { "label": "X (Twitter)" },
+          { "label": "Instagram" }
         ]
       }
     }
