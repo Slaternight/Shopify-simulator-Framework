@@ -49,6 +49,19 @@
         "background_image": "hero_banner_img.avif"
       }
     },
+    "latest-collection": {
+      "type": "latest-collection",
+      "settings": {
+        "symbol_right": "symbol_collection.svg",
+        "title": "Latest Collection",
+        "symbol_left": "symbol_collection.svg",
+        "collection_name_1": "KET.CLUB",
+        "collection_name_2": "Shuffle Essentials",
+        "image_1": "ket_club.jpg",
+        "image_2": "shuffle_essentials.webp",
+        "image_3": "homepage_bottom_banner.avif"
+      }
+    },
     "footer": {
       "type": "footer",
       "settings": {
