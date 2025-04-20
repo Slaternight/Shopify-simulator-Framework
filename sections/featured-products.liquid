@@ -9,3 +9,47 @@
   </div>
   <button id="toggleProducts" class="featured-products__toggle-button">{{ featured.button_text }}</button>
 </section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const allProductWrappers = document.querySelectorAll('.featured-products__item');
+    const initialHiddenCards = Array.from(allProductWrappers).slice(4);
+    const toggleBtn = document.getElementById('toggleProducts');
+    let showingAll = false;
+    const animationDuration = 600;
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('featured-products__item--visible');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    allProductWrappers.forEach(card => {
+      card.classList.add('featured-products__item--reveal');
+      observer.observe(card);
+    });
+
+    toggleBtn.addEventListener('click', () => {
+      showingAll = !showingAll;
+      toggleBtn.textContent = showingAll ? 'View Less' : 'View All';
+
+      if (showingAll) {
+        initialHiddenCards.forEach(card => {
+          card.classList.remove('featured-products__item--hidden');
+          observer.observe(card);
+        });
+      } else {
+        initialHiddenCards.forEach(card => {
+          card.classList.remove('featured-products__item--visible');
+          setTimeout(() => {
+            card.classList.add('featured-products__item--hidden');
+          }, animationDuration);
+        });
+      }
+    });
+  });
+  </script>
